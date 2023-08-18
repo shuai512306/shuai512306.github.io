@@ -8,18 +8,19 @@
     <title>
         Hexo
     </title>
+    <!--<link href="themes/prism-ghcolors.css" rel="stylesheet" />-->
     
-<link rel="stylesheet" href="/libs/highlight/styles/monokai-sublime.css">
+<link rel="stylesheet" href="/libs/highlight/styles/prism-synthwave84.css">
 
-    
+        
 <link rel="stylesheet" href="/libs/font-awesome/css/font-awesome.min.css">
 
-    
+            
 <link rel="stylesheet" href="/css/style.css">
 
 <meta name="generator" content="Hexo 6.3.0">
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-</head>
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 <body id="bodyx">
     <div class="hd posts">
@@ -43,28 +44,50 @@
 <h1 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h1><p>在项目二的顺序是非常合适的：</p>
 <h2 id="1、生成密钥"><a href="#1、生成密钥" class="headerlink" title="1、生成密钥"></a>1、生成密钥</h2><p>使用到的代码</p>
 <p>生成了一对秘钥public</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C “youremail@gmail.com”</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class=" language-bash"><code class="language-bash">ssh-keygen -t rsa -C “youremail@gmail.com”
+</code></pre>
 <p>再用另一个邮箱生成一对 private 的秘钥</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C “private_email@gmail.com”</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class=" language-bash"><code class="language-bash">ssh-keygen -t rsa -C “private_email@gmail.com”
+</code></pre>
 <p>要注意重命名，否则会覆盖上面的密钥文件。假设我们生成了一对新的秘钥private 和private.pub。</p>
 <p>然后分别将这两对密钥加入到对应的 GitHub 账户中。</p>
 <h2 id="2、编辑配置文件"><a href="#2、编辑配置文件" class="headerlink" title="2、编辑配置文件"></a>2、编辑配置文件</h2><p>这个public，虽然并没有像第二个配置了 hexo 根目录下的@后的github_config，但是可能在ssh  config之中在第一位，在没有了全局global的配置下，可能为第一个为默认。</p>
 <p>编辑~/.ssh/config文件。如果该文件不存在的话，直接创建一个就好。里面的内容如下：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 公共</span></span><br><span class="line">Host github_public</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">IdentityFile ~/.ssh/id_rsa</span><br><span class="line">port 22</span><br><span class="line"><span class="comment">#个人</span></span><br><span class="line">Host github_private</span><br><span class="line">Hostname ssh.github.com</span><br><span class="line">IdentityFile ~/.ssh/private</span><br><span class="line">port 22</span><br></pre></td></tr></tbody></table></figure>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 公共</span>
+Host github_public
+Hostname ssh.github.com
+IdentityFile ~/.ssh/id_rsa
+port 22
+<span class="token comment" spellcheck="true">#个人</span>
+Host github_private
+Hostname ssh.github.com
+IdentityFile ~/.ssh/private
+port 22
+</code></pre>
 <p>先把两个公钥添加到对应的 GitHub 账户，再进行下面的 ssh 连接测试，否则肯定是连接不上，会显示 permission denied。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github_public</span><br><span class="line">ssh -T git@github_private</span><br></pre></td></tr></tbody></table></figure>
-
+<pre class=" language-bash"><code class="language-bash"><span class="token function">ssh</span> -T git@github_public
+<span class="token function">ssh</span> -T git@github_private
+</code></pre>
 <p>如果都能正常返回如下信息，就说明配置正常。</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi xxx! You<span class="string">'ve successfully authenticated, but GitHub does not provide shell access.</span></span><br></pre></td></tr></tbody></table></figure>
+<pre class=" language-bash"><code class="language-bash">Hi xxx<span class="token operator">!</span> You've successfully authenticated, but GitHub does not provide shell access.
+</code></pre>
 <h2 id="3、配置仓库设置"><a href="#3、配置仓库设置" class="headerlink" title="3、配置仓库设置"></a>3、配置仓库设置</h2><p>在本次踩坑中为hexo根目录下，没有如（项目一）中config配置一样的名字。</p>
 <p>首先要删除GIT配置的全局用户名和邮件地址，接着在每个项目仓库中按照需求设置不同的user.name和 user.email：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 删除全局设置</span></span><br><span class="line">git config --global --<span class="built_in">unset</span> user.name</span><br><span class="line">git config --global --<span class="built_in">unset</span> user.email</span><br><span class="line"><span class="comment"># 添加本地设置</span></span><br><span class="line"><span class="comment"># 设置为私有仓库的GitHub账号邮箱和公有账号的GitHub邮箱。</span></span><br><span class="line">git config --<span class="built_in">local</span> user.name xxxx</span><br><span class="line">git config --<span class="built_in">local</span> user.email xxx</span><br></pre></td></tr></tbody></table></figure>
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># 删除全局设置</span>
+<span class="token function">git</span> config --global --unset user.name
+<span class="token function">git</span> config --global --unset user.email
+<span class="token comment" spellcheck="true"># 添加本地设置</span>
+<span class="token comment" spellcheck="true"># 设置为私有仓库的GitHub账号邮箱和公有账号的GitHub邮箱。</span>
+<span class="token function">git</span> config --local user.name xxxx
+<span class="token function">git</span> config --local user.email xxx
+</code></pre>
 <p>在添加本地配置时，可能会失败，有可能因为当前目录下没有.git文件夹，所以可以当clone时在使用。</p>
 <p>之后在添加远程仓库的时候，把github.com 修改成github_public 或者github_private就好了（即上述文件中的HOST选项），用上面两个 Host 名称来代替原来的github.com ，（这一步很重要）如：</p>
-<figure class="highlight bash"><table><tbody><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># public user</span></span><br><span class="line">git remote add origin git@github_public:xxx/example.git</span><br><span class="line"><span class="comment"># priavate user</span></span><br><span class="line">git remote add origin git@github_private:xxx/example.git </span><br></pre></td></tr></tbody></table></figure>
-
+<pre class=" language-bash"><code class="language-bash"><span class="token comment" spellcheck="true"># public user</span>
+<span class="token function">git</span> remote add origin git@github_public:xxx/example.git
+<span class="token comment" spellcheck="true"># priavate user</span>
+<span class="token function">git</span> remote add origin git@github_private:xxx/example.git 
+</code></pre>
 <p>其实，上面的配置文件的意思就是，按照你设置远程仓库时使用不同的 Host 名称，查找~/.ssh/config文件，使用不同的 SSH 文件连接到 GitHub。这样你就将是以不同的身份访问 GitHub 仓库。</p>
 <p>这个可能是，在本地写完代码时提交GitHub时使用，比如git init 之后，git remote链接到GitHub时使用，才有账号push。</p>
 
