@@ -83,7 +83,7 @@
     
         
             <a title="github"
-               href="https://github.com/yelog"
+               href="https://github.com/shuai512306"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
@@ -94,15 +94,11 @@
         
     
         
-            <a title="facebook"
-               href="https://www.facebook.com/faker.tops"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-facebook"></use>
-                    </svg>
-                
-            </a>
+    
+        
+    
+        
+    
         
     
         
@@ -110,84 +106,18 @@
         
     
         
-            <a title="instagram"
-               href="https://www.facebook.com/faker.tops"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-instagram"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="reddit"
-               href="https://www.reddit.com/user/yelog/"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-reddit"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="weibo"
-               href="http://weibo.com/u/2307534817"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-weibo"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="jianshu"
-               href="https://www.jianshu.com/u/ff56736de7cf"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-jianshu"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="zhihu"
-               href="https://www.zhihu.com/people/jaytp/activities"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-zhihu"></use>
-                    </svg>
-                
-            </a>
-        
     
         
     
         
-            <a title="oschina"
-               href="https://my.oschina.net/yelog"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-oschina"></use>
-                    </svg>
-                
-            </a>
+    
         
     
         
     
         
             <a title="email"
-               href="mailto:jaytp@qq.com"
+               href="mailto:2099379588@qq.com"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
@@ -199,7 +129,7 @@
     
         
             <a title="qq"
-               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               href="http://wpa.qq.com/msgrd?v=3&uin=2099379588&site=qq&menu=yes"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
@@ -210,27 +140,7 @@
         
     
         
-            <a title="kugou"
-               href="https://www.kugou.com/"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-kugou"></use>
-                    </svg>
-                
-            </a>
-        
     
-        
-            <a title="neteasemusic"
-               href="https://music.163.com/#/user/home?id=88151013"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-neteasemusic"></use>
-                    </svg>
-                
-            </a>
         
     
 </div>
@@ -434,7 +344,7 @@
         
         
         <a  class="全部文章 Hexo "
-           href="/2023/07/07/newspaper-img"
+           href="/2023/07/07/github-bo-ke"
            data-tag="hexo"
            data-author="" >
             <span class="post-title" title="github.io部署个人博客">github.io部署个人博客</span>
@@ -486,7 +396,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-09-03 16:45:12'>2023-09-03 16:16</time>
+            发布时间 : <time class="date" title='最后更新: 2023-09-03 20:26:53'>2023-09-03 16:16</time>
         
     </div>
     <div class="article-meta">
@@ -515,8 +425,8 @@
     .left-col .switch-area {
         display: none;
     }
-    .toc-level-3 i,
-    .toc-level-3 ol {
+    .toc-level-5 i,
+    .toc-level-5 ol {
         display: none !important;
     }
 </style>
@@ -548,28 +458,34 @@
 <blockquote>
 <p>文本输入框是input元素中最常用的类型之一，它允许用户输入单行文本数据。下面是一个文本输入框的示例代码：</p>
 </blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"username"</span>&gt;</span>用户名：<span class="tag">&lt;/<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"username"</span>&gt;</span>用户名：<span class="tag">&lt;/<span class="name">label</span>></span>
-<span class="tag"><<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">placeholder</span>=<span class="string">"请输入用户名"</span> <span class="attr">required</span>></span></code></pre>
+<pre class=" language-highlight HTML"><code class="language-highlight HTML">
+<span class="tag"><<span class="name">label</span> <span class="attr">for</span>=<span class="string">"username"</span>></span>用户名：<span class="tag"></<span class="name">label</span>></span>
+<span class="tag"><<span class="name">input</span> <span class="attr">type</span>=<span class="string">"text"</span> <span class="attr">id</span>=<span class="string">"username"</span> <span class="attr">name</span>=<span class="string">"username"</span> <span class="attr">placeholder</span>=<span class="string">"请输入用户名"</span> <span class="attr">required</span>></span> 
+</code></pre>
 
 <p>这里我们使用了label元素来标注输入框的名称，for属性指定了label和input元素的关联关系。另外，我们还使用了placeholder属性来指定输入框的占位符文本，用于提示用户输入内容的格式或意义。required属性指定输入框为必填项，当用户未填写时会有提示信息。</p>
 <blockquote>
 <p>密码输入框也是input元素的一种类型，它与文本输入框的区别在于输入内容会被隐藏。下面是一个密码输入框的示例代码：</p>
 </blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"password"</span>&gt;</span>密码：<span class="tag">&lt;/<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">label</span> <span class="attr">for</span>=<span class="string">"password"</span>&gt;</span>密码：<span class="tag">&lt;/<span class="name">label</span>></span>
-<span class="tag"><<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"请输入密码"</span> <span class="attr">required</span>></span></code></pre>
+<pre class=" language-highlight HTML"><code class="language-highlight HTML">
+<span class="tag"><<span class="name">label</span> <span class="attr">for</span>=<span class="string">"password"</span>></span>密码：<span class="tag"></<span class="name">label</span>></span>
+<span class="tag"><<span class="name">input</span> <span class="attr">type</span>=<span class="string">"password"</span> <span class="attr">id</span>=<span class="string">"password"</span> <span class="attr">name</span>=<span class="string">"password"</span> <span class="attr">placeholder</span>=<span class="string">"请输入密码"</span> <span class="attr">required</span>></span>
+</code></pre>
 
 <p>这里我们同样使用了label元素来标注输入框的名称，for属性指定了label和input元素的关联关系。另外，我们还使用了placeholder属性来指定输入框的占位符文本，用于提示用户输入内容的格式或意义。required属性指定输入框为必填项，当用户未填写时会有提示信息。</p>
 <p>除了文本输入框，表单还包括单选框、复选框、下拉框等元素，让用户能够更方便地提交信息。</p>
 <p>单选框和复选框的HTML代码非常相似，主要区别在于单选框只允许用户选择其中的一个选项，而复选框则允许选择多个选项。</p>
 <p>以下是单选框和复选框的示例代码：</p>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name">label</span>&gt;</span>单选框：<span class="tag">&lt;/<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">label</span>&gt;</span>单选框：<span class="tag">&lt;/<span class="name">label</span>></span>
+<pre class=" language-highlight HTML"><code class="language-highlight HTML">
+<span class="tag"><<span class="name">label</span>></span>单选框：<span class="tag"></<span class="name">label</span>></span>
 <span class="tag"><<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"gender"</span> <span class="attr">value</span>=<span class="string">"male"</span> <span class="attr">checked</span>></span>男
 <span class="tag"><<span class="name">input</span> <span class="attr">type</span>=<span class="string">"radio"</span> <span class="attr">name</span>=<span class="string">"gender"</span> <span class="attr">value</span>=<span class="string">"female"</span>></span>女
 
 <span class="tag"><<span class="name">label</span>></span>复选框：<span class="tag"></<span class="name">label</span>></span>
 <span class="tag"><<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">name</span>=<span class="string">"fruit"</span> <span class="attr">value</span>=<span class="string">"apple"</span> <span class="attr">checked</span>></span>苹果
 <span class="tag"><<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">name</span>=<span class="string">"fruit"</span> <span class="attr">value</span>=<span class="string">"banana"</span>></span>香蕉
-<span class="tag"><<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">name</span>=<span class="string">"fruit"</span> <span class="attr">value</span>=<span class="string">"orange"</span>></span>橙子</code></pre>
+<span class="tag"><<span class="name">input</span> <span class="attr">type</span>=<span class="string">"checkbox"</span> <span class="attr">name</span>=<span class="string">"fruit"</span> <span class="attr">value</span>=<span class="string">"orange"</span>></span>橙子
+</code></pre>
 
 <p>上面的代码中，单选框使用&lt;input&gt;标签，设置type=”radio”表示它是一个单选框，使用name属性来给单选框分组，同一组中的单选框只允许选择一个，使用value属性来设置单选框的值，用checked属性来设置默认选中的单选框。</p>
 <p>复选框同理，使用&lt;input&gt;标签，设置type=”checkbox”表示它是一个复选框，同样使用name属性来给复选框分组，不同的是复选框允许多选，使用value属性来设置复选框的值，用checked属性来设置默认选中的复选框。</p>
@@ -578,7 +494,7 @@
 <p>学习HTML表单元素时，需要<strong>了解各种表单元素的使用场景和相关属性</strong>，以便在实际开发中使用。同时，需要注意<strong>表单元素的布局和样式</strong>，以提高表单的可用性和用户体验。</p>
 
       
-       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+       <hr><span style="font-style: italic;color: gray;"> 转载来源https://github.com/yelog ，在这只为做笔记供个人使用。 </span>
     </div>
 </article>
 
@@ -600,7 +516,7 @@
     </div>
     <div class="copyright">
         <p class="footer-entry">
-    ©2016-2020 Yelog
+    ©2023-至今 Shuai-WMZB
 </p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 

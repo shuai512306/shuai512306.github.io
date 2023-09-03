@@ -83,7 +83,7 @@
     
         
             <a title="github"
-               href="https://github.com/yelog"
+               href="https://github.com/shuai512306"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
@@ -94,15 +94,11 @@
         
     
         
-            <a title="facebook"
-               href="https://www.facebook.com/faker.tops"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-facebook"></use>
-                    </svg>
-                
-            </a>
+    
+        
+    
+        
+    
         
     
         
@@ -110,84 +106,18 @@
         
     
         
-            <a title="instagram"
-               href="https://www.facebook.com/faker.tops"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-instagram"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="reddit"
-               href="https://www.reddit.com/user/yelog/"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-reddit"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="weibo"
-               href="http://weibo.com/u/2307534817"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-weibo"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="jianshu"
-               href="https://www.jianshu.com/u/ff56736de7cf"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-jianshu"></use>
-                    </svg>
-                
-            </a>
-        
-    
-        
-            <a title="zhihu"
-               href="https://www.zhihu.com/people/jaytp/activities"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-zhihu"></use>
-                    </svg>
-                
-            </a>
-        
     
         
     
         
-            <a title="oschina"
-               href="https://my.oschina.net/yelog"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-oschina"></use>
-                    </svg>
-                
-            </a>
+    
         
     
         
     
         
             <a title="email"
-               href="mailto:jaytp@qq.com"
+               href="mailto:2099379588@qq.com"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
@@ -199,7 +129,7 @@
     
         
             <a title="qq"
-               href="http://wpa.qq.com/msgrd?v=3&uin=872336115&site=qq&menu=yes"
+               href="http://wpa.qq.com/msgrd?v=3&uin=2099379588&site=qq&menu=yes"
                target="_blank">
                 
                     <svg class="iconfont-svg" aria-hidden="true">
@@ -210,27 +140,7 @@
         
     
         
-            <a title="kugou"
-               href="https://www.kugou.com/"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-kugou"></use>
-                    </svg>
-                
-            </a>
-        
     
-        
-            <a title="neteasemusic"
-               href="https://music.163.com/#/user/home?id=88151013"
-               target="_blank">
-                
-                    <svg class="iconfont-svg" aria-hidden="true">
-                        <use xlink:href="#icon-neteasemusic"></use>
-                    </svg>
-                
-            </a>
         
     
 </div>
@@ -434,7 +344,7 @@
         
         
         <a  class="全部文章 Hexo "
-           href="/2023/07/07/newspaper-img"
+           href="/2023/07/07/github-bo-ke"
            data-tag="hexo"
            data-author="" >
             <span class="post-title" title="github.io部署个人博客">github.io部署个人博客</span>
@@ -486,7 +396,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-09-03 16:45:08'>2023-09-03 16:15</time>
+            发布时间 : <time class="date" title='最后更新: 2023-09-03 20:26:24'>2023-09-03 16:15</time>
         
     </div>
     <div class="article-meta">
@@ -515,8 +425,8 @@
     .left-col .switch-area {
         display: none;
     }
-    .toc-level-3 i,
-    .toc-level-3 ol {
+    .toc-level-5 i,
+    .toc-level-5 ol {
         display: none !important;
     }
 </style>
@@ -526,21 +436,27 @@
       
         <h1 id="HTML-多媒体元素"><a href="#HTML-多媒体元素" class="headerlink" title="HTML 多媒体元素"></a>HTML 多媒体元素</h1><p>下面是一些常用的 HTML 多媒体标签：</p>
 <p>1、**&lt;img&gt;** 标签：用于嵌入图片。</p>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"image.jpg"</span> <span class="attr">alt</span>=<span class="string"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"image.jpg"</span> <span class="attr">alt</span>=<span class="string">"图片"</span>></span></code></pre>
+<pre class=" language-highlight HTML"><code class="language-highlight HTML">
+<span class="tag"><<span class="name">img</span> <span class="attr">src</span>=<span class="string">"image.jpg"</span> <span class="attr">alt</span>=<span class="string">"图片"</span>></span> 
+</code></pre>
 
 <p>2、**&lt;video&gt;** 标签：用于嵌入视频。</p>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr">controls</span>></span>
-  <span class="tag"><<span class="name">source</span> <span class="attr">src</span>=<span class="string">"video.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>></span>
-  <span class="tag"><<span class="name">source</span> <span class="attr">src</span>=<span class="string">"video.ogg"</span> <span class="attr">type</span>=<span class="string">"video/ogg"</span>></span>
-  Your browser does not support the video tag.
-<span class="tag"></<span class="name">video</span>></span></code></pre>
+<pre class=" language-highlight HTML"><code class="language-highlight HTML">
+<span class="tag"><<span class="name">video</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr">controls</span>></span>
+    <span class="tag"><<span class="name">source</span> <span class="attr">src</span>=<span class="string">"video.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>></span>
+    <span class="tag"><<span class="name">source</span> <span class="attr">src</span>=<span class="string">"video.ogg"</span> <span class="attr">type</span>=<span class="string">"video/ogg"</span>></span>
+    Your browser does not support the video tag.
+<span class="tag"></<span class="name">video</span>></span>
+</code></pre>
 
 <p>3、**&lt;audio&gt;** 标签：用于嵌入音频。</p>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name">audio</span> <span class="attr"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>></span>
+<pre class=" language-highlight HTML"><code class="language-highlight HTML">
+<span class="tag"><<span class="name">audio</span> <span class="attr">controls</span>></span>
   <span class="tag"><<span class="name">source</span> <span class="attr">src</span>=<span class="string">"music.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span>></span>
   <span class="tag"><<span class="name">source</span> <span class="attr">src</span>=<span class="string">"music.ogg"</span> <span class="attr">type</span>=<span class="string">"audio/ogg"</span>></span>
   Your browser does not support the audio element.
-<span class="tag"></<span class="name">audio</span>></span></code></pre>
+<span class="tag"></<span class="name">audio</span>></span>
+</code></pre>
 
 <p>在使用多媒体标签时，我们需要注意以下几点：</p>
 <ul>
@@ -569,7 +485,7 @@
 <p>在实际开发中，媒体元素的应用非常广泛，例如在网站中加入介绍视频、音频背景等等，都可以使用媒体元素来实现。同时，<strong>需要注意优化媒体文件大小，以提高页面加载速度。</strong></p>
 
       
-       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+       <hr><span style="font-style: italic;color: gray;"> 转载来源https://github.com/yelog ，在这只为做笔记供个人使用。 </span>
     </div>
 </article>
 
@@ -591,7 +507,7 @@
     </div>
     <div class="copyright">
         <p class="footer-entry">
-    ©2016-2020 Yelog
+    ©2023-至今 Shuai-WMZB
 </p>
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
