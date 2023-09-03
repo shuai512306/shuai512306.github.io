@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2-html组成 | Hexo</title>
-  <meta name="keywords" content=" HTML ">
-  <meta name="description" content="2-html组成 | Hexo">
+  <title>8-css媒体查询与响应式 | Hexo</title>
+  <meta name="keywords" content=" CSS ">
+  <meta name="description" content="8-css媒体查询与响应式 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -496,9 +496,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-2-html组成" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-8-css媒体查询与响应式" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">2-html组成</h1>
+        <h1 class="article-title">8-css媒体查询与响应式</h1>
     
     <div class="article-meta">
         
@@ -508,7 +508,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Html">Html</a>
+            <a  data-rel="CSS">CSS</a>
             
         </span>
         
@@ -516,14 +516,14 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color5">HTML</a>
+            <a class="color4">CSS</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-09-03 16:44:58'>2023-09-03 16:13</time>
+            发布时间 : <time class="date" title='最后更新: 2023-09-03 21:52:37'>2023-09-03 21:49</time>
         
     </div>
     <div class="article-meta">
@@ -545,7 +545,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML%E7%BB%84%E6%88%90"><span class="toc-text">HTML组成</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2%E4%B8%8E%E5%93%8D%E5%BA%94%E5%BC%8F"><span class="toc-text">CSS 媒体查询与响应式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#CSS%E5%AA%92%E4%BD%93%E6%9F%A5%E8%AF%A2"><span class="toc-text">CSS媒体查询</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%93%8D%E5%BA%94%E5%BC%8F%E8%AE%BE%E8%AE%A1"><span class="toc-text">响应式设计</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -561,60 +561,50 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="HTML组成"><a href="#HTML组成" class="headerlink" title="HTML组成"></a>HTML组成</h1><p>HTML是超文本标记语言（<em><strong>HyperText Markup Language</strong></em>）的缩写，它是用于构建网页的基本语言之一。HTML由一系列标签（<strong>tag</strong>）组成，标签用于描述网页的结构和内容。</p>
-<p>以下是HTML的基本组成部分：</p>
-<blockquote>
-<p>DOCTYPE声明：这是HTML文档的第一行，用于指定文档类型。例如：</p>
+        <h2 id="CSS-媒体查询与响应式"><a href="#CSS-媒体查询与响应式" class="headerlink" title="CSS 媒体查询与响应式"></a>CSS 媒体查询与响应式</h2><h3 id="CSS媒体查询"><a href="#CSS媒体查询" class="headerlink" title="CSS媒体查询"></a>CSS媒体查询</h3><blockquote>
+<p>CSS媒体查询是CSS3新增的一个功能，用于根据设备特性和视口尺寸来为不同的设备和屏幕大小应用不同的样式。通过使用媒体查询，我们可以针对不同设备分别设置样式，以便为不同设备提供最佳的用户体验。</p>
 </blockquote>
-<pre class=" language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword"><code class="language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>></span></code></pre>
+<blockquote>
+<p>媒体查询可以在CSS文件中定义，使用@media关键字和一个条件列表来指定一组样式规则。媒体查询可以包含多个条件，这些条件可以组合使用，以便根据需要设置样式。以下是一个简单的媒体查询示例：</p>
+</blockquote>
+<pre class=" language-highlight CSS"><code class="language-highlight CSS">
+<span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">600px</span>) {
+  <span class="selector-tag">body</span> {
+    <span class="attribute">background-color</span>: lightblue;
+  }
+}</code></pre>
 
 <blockquote>
-<p>HTML标签：HTML文档中的所有内容都需要包含在HTML标签中。HTML标签由开始标签和结束标签组成，例如：</p>
+<p>上面的代码表示，在屏幕宽度小于或等于600像素时，将body元素的背景色设置为浅蓝色。其中，@media screen表示只在屏幕上应用这个样式，(max-width: 600px)表示屏幕宽度不超过600像素时应用这个样式。</p>
 </blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">html</span>></span>
-  <span class="comment"><!-- 此处为页面内容 --></span>
-<span class="tag"></<span class="name">html</span>></span></code></pre>
+<h3 id="响应式设计"><a href="#响应式设计" class="headerlink" title="响应式设计"></a>响应式设计</h3><blockquote>
+<p>响应式设计是指网站或应用程序可以自适应不同的设备和屏幕大小，以提供最佳的用户体验。通过使用媒体查询和其他CSS技术，我们可以创建响应式布局，使网站能够适应不同屏幕大小和方向。</p>
+</blockquote>
+<p>以下是一个简单的响应式布局示例，使用媒体查询和flexbox布局：</p>
+<pre class=" language-highlight CSS"><code class="language-highlight CSS">
+<span class="keyword">@media</span> screen <span class="keyword">and</span> (<span class="attribute">max-width</span>: <span class="number">600px</span>) {
+  <span class="selector-class">.container</span> {
+    <span class="attribute">display</span>: flex;
+    <span class="attribute">flex-direction</span>: column;
+  }
+  <span class="selector-class">.item</span> {
+    <span class="attribute">width</span>: <span class="number">100%</span>;
+  }
+}
+
+<span class="selector-class">.container</span> {
+  <span class="attribute">display</span>: flex;
+  <span class="attribute">flex-wrap</span>: wrap;
+}
+
+<span class="selector-class">.item</span> {
+  <span class="attribute">flex</span>: <span class="number">1</span>;
+  <span class="attribute">min-width</span>: <span class="number">300px</span>;
+  <span class="attribute">margin</span>: <span class="number">10px</span>;
+}</code></pre>
 
 <blockquote>
-<p>Head标签：Head标签用于定义文档的元数据，例如页面标题、编码方式等。Head标签位于HTML标签内，例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">head</span>></span>
-  <span class="tag"><<span class="name">title</span>></span>我的网页<span class="tag"></<span class="name">title</span>></span>
-  <span class="tag"><<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>></span>
-<span class="tag"></<span class="name">head</span>></span></code></pre>
-
-<blockquote>
-<p>Body标签：Body标签用于定义页面的主体内容，例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">body</span>></span>
-  <span class="tag"><<span class="name">h1</span>></span>欢迎来到我的网页<span class="tag"></<span class="name">h1</span>></span>
-  <span class="tag"><<span class="name">p</span>></span>这是我的第一个网页。<span class="tag"></<span class="name">p</span>></span>
-<span class="tag"></<span class="name">body</span>></span></code></pre>
-
-<blockquote>
-<p>下面是一个完整的HTML示例代码：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword"><code class="language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>></span>
-<span class="tag"><<span class="name">html</span>></span>
-  <span class="tag"><<span class="name">head</span>></span>
-    <span class="tag"><<span class="name">title</span>></span>我的网页<span class="tag"></<span class="name">title</span>></span>
-    <span class="tag"><<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>></span>
-  <span class="tag"></<span class="name">head</span>></span>
-  <span class="tag"><<span class="name">body</span>></span>
-    <span class="tag"><<span class="name">h1</span>></span>欢迎来到我的网页<span class="tag"></<span class="name">h1</span>></span>
-    <span class="tag"><<span class="name">p</span>></span>这是我的第一个网页。<span class="tag"></<span class="name">p</span>></span>
-    <span class="tag"><<span class="name">img</span> <span class="attr">src</span>=<span class="string">"myimage.png"</span> <span class="attr">alt</span>=<span class="string">"我的图片"</span>></span>
-  <span class="tag"></<span class="name">body</span>></span>
-<span class="tag"></<span class="name">html</span>></span></code></pre>
-
-<blockquote>
-<p>在实际开发中，需要注意HTML的语义化，即使用恰当的标签描述内容的结构和意义，以便浏览器、搜索引擎和其他设备更好地理解和解析页面内容。例如，使用标题标签（<strong>h1~h6</strong>）描述页面标题，使用段落标签（<strong>p</strong>）描述段落内容，使用列表标签（<strong>ul、ol、li</strong>）描述列表等。</p>
-</blockquote>
-<blockquote>
-<p>同时，还需要注意布局元素的使用，例如<strong>div、span、section、article、nav</strong>等，它们用于将页面内容划分为更加具有语义的区域，并进行样式和布局设置。</p>
-</blockquote>
-<blockquote>
-<p>最后，多媒体元素和表单元素是构建丰富交互体验的关键。例如，使用视频标签（<strong>video</strong>）和音频标签（<strong>audio</strong>）嵌入视频和音频内容，使用表单标签（<strong>form</strong>）、输入框标签（<strong>input</strong>）、下拉框标签（<strong>select</strong>）等实现数据的输入、提交和验证。</p>
+<p>上面的代码表示，在屏幕宽度小于或等于600像素时，将.container元素的布局设置为垂直方向，并将.item元素的宽度设置为100%。在屏幕宽度大于600像素时，将.container元素的布局设置为水平方向，使用flex-wrap属性实现自动换行，将.item元素的宽度设置为固定值，并使用flex属性实现自适应布局。</p>
 </blockquote>
 
       

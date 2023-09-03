@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2-html组成 | Hexo</title>
-  <meta name="keywords" content=" HTML ">
-  <meta name="description" content="2-html组成 | Hexo">
+  <title>5-css视觉格式化模型 | Hexo</title>
+  <meta name="keywords" content=" CSS ">
+  <meta name="description" content="5-css视觉格式化模型 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -496,9 +496,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-2-html组成" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-5-css视觉格式化模型" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">2-html组成</h1>
+        <h1 class="article-title">5-css视觉格式化模型</h1>
     
     <div class="article-meta">
         
@@ -508,7 +508,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Html">Html</a>
+            <a  data-rel="CSS">CSS</a>
             
         </span>
         
@@ -516,14 +516,14 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color5">HTML</a>
+            <a class="color4">CSS</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-09-03 16:44:58'>2023-09-03 16:13</time>
+            发布时间 : <time class="date" title='最后更新: 2023-09-03 21:32:18'>2023-09-03 21:28</time>
         
     </div>
     <div class="article-meta">
@@ -545,7 +545,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML%E7%BB%84%E6%88%90"><span class="toc-text">HTML组成</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E8%A7%86%E8%A7%89%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%A8%A1%E5%9E%8B"><span class="toc-text">CSS视觉格式化模型</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -561,61 +561,37 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="HTML组成"><a href="#HTML组成" class="headerlink" title="HTML组成"></a>HTML组成</h1><p>HTML是超文本标记语言（<em><strong>HyperText Markup Language</strong></em>）的缩写，它是用于构建网页的基本语言之一。HTML由一系列标签（<strong>tag</strong>）组成，标签用于描述网页的结构和内容。</p>
-<p>以下是HTML的基本组成部分：</p>
-<blockquote>
-<p>DOCTYPE声明：这是HTML文档的第一行，用于指定文档类型。例如：</p>
+        <h2 id="CSS视觉格式化模型"><a href="#CSS视觉格式化模型" class="headerlink" title="CSS视觉格式化模型"></a>CSS视觉格式化模型</h2><blockquote>
+<p>CSS视觉格式化模型（CSS Visual Formatting Model）是指当浏览器渲染页面时，如何计算并呈现HTML元素的大小、位置、边框、内边距和外边距等视觉属性的一种计算机制。</p>
 </blockquote>
-<pre class=" language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword"><code class="language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>></span></code></pre>
+<p>这个模型描述了每个HTML元素如何被渲染成屏幕上的可见元素。理解这个模型对于开发人员来说非常重要，因为它能够帮助我们设计和实现精美的页面布局。</p>
+<p>CSS视觉格式化模型主要包括两个部分：</p>
+<blockquote>
+<p>盒模型（Box Model）：每个HTML元素都被看作是一个矩形盒子，由四个区域组成：<strong>内容区域、内边距区域、边框区域和外边距区域</strong>。CSS可以控制每个区域的大小、颜色、边框样式等属性。例如，我们可以使用下面的CSS代码来定义一个元素的盒模型：</p>
+</blockquote>
+<pre class=" language-highlight CSS"><code class="language-highlight CSS">
+<span class="selector-tag">div</span> {
+  <span class="attribute">width</span>: <span class="number">200px</span>; <span class="comment">/* 宽度 */</span>
+  <span class="attribute">height</span>: <span class="number">100px</span>; <span class="comment">/* 高度 */</span>
+  <span class="attribute">padding</span>: <span class="number">10px</span>; <span class="comment">/* 内边距 */</span>
+  <span class="attribute">border</span>: <span class="number">1px</span> solid black; <span class="comment">/* 边框 */</span>
+  <span class="attribute">margin</span>: <span class="number">20px</span>; <span class="comment">/* 外边距 */</span>
+}</code></pre>
 
 <blockquote>
-<p>HTML标签：HTML文档中的所有内容都需要包含在HTML标签中。HTML标签由开始标签和结束标签组成，例如：</p>
+<p>布局模型（Layout Model）：指定元素在页面上的位置和大小。CSS布局模型使用了<strong>流、定位、浮动和层叠等概念</strong>。元素的布局方式由其<strong>position属性的值</strong>来决定，可以是<strong>static、relative、absolute和fixed</strong>等。例如，我们可以使用下面的CSS代码来设置一个元素的位置和大小：</p>
 </blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">html</span>></span>
-  <span class="comment"><!-- 此处为页面内容 --></span>
-<span class="tag"></<span class="name">html</span>></span></code></pre>
+<pre class=" language-highlight CSS"><code class="language-highlight CSS">
+<span class="selector-tag">div</span> {
+  <span class="attribute">position</span>: absolute; <span class="comment">/* 定位 */</span>
+  <span class="attribute">top</span>: <span class="number">100px</span>; <span class="comment">/* 上边距 */</span>
+  <span class="attribute">left</span>: <span class="number">200px</span>; <span class="comment">/* 左边距 */</span>
+  <span class="attribute">width</span>: <span class="number">200px</span>; <span class="comment">/* 宽度 */</span>
+  <span class="attribute">height</span>: <span class="number">100px</span>; <span class="comment">/* 高度 */</span>
+}</code></pre>
 
-<blockquote>
-<p>Head标签：Head标签用于定义文档的元数据，例如页面标题、编码方式等。Head标签位于HTML标签内，例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">head</span>></span>
-  <span class="tag"><<span class="name">title</span>></span>我的网页<span class="tag"></<span class="name">title</span>></span>
-  <span class="tag"><<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>></span>
-<span class="tag"></<span class="name">head</span>></span></code></pre>
-
-<blockquote>
-<p>Body标签：Body标签用于定义页面的主体内容，例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">body</span>></span>
-  <span class="tag"><<span class="name">h1</span>></span>欢迎来到我的网页<span class="tag"></<span class="name">h1</span>></span>
-  <span class="tag"><<span class="name">p</span>></span>这是我的第一个网页。<span class="tag"></<span class="name">p</span>></span>
-<span class="tag"></<span class="name">body</span>></span></code></pre>
-
-<blockquote>
-<p>下面是一个完整的HTML示例代码：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword"><code class="language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>></span>
-<span class="tag"><<span class="name">html</span>></span>
-  <span class="tag"><<span class="name">head</span>></span>
-    <span class="tag"><<span class="name">title</span>></span>我的网页<span class="tag"></<span class="name">title</span>></span>
-    <span class="tag"><<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>></span>
-  <span class="tag"></<span class="name">head</span>></span>
-  <span class="tag"><<span class="name">body</span>></span>
-    <span class="tag"><<span class="name">h1</span>></span>欢迎来到我的网页<span class="tag"></<span class="name">h1</span>></span>
-    <span class="tag"><<span class="name">p</span>></span>这是我的第一个网页。<span class="tag"></<span class="name">p</span>></span>
-    <span class="tag"><<span class="name">img</span> <span class="attr">src</span>=<span class="string">"myimage.png"</span> <span class="attr">alt</span>=<span class="string">"我的图片"</span>></span>
-  <span class="tag"></<span class="name">body</span>></span>
-<span class="tag"></<span class="name">html</span>></span></code></pre>
-
-<blockquote>
-<p>在实际开发中，需要注意HTML的语义化，即使用恰当的标签描述内容的结构和意义，以便浏览器、搜索引擎和其他设备更好地理解和解析页面内容。例如，使用标题标签（<strong>h1~h6</strong>）描述页面标题，使用段落标签（<strong>p</strong>）描述段落内容，使用列表标签（<strong>ul、ol、li</strong>）描述列表等。</p>
-</blockquote>
-<blockquote>
-<p>同时，还需要注意布局元素的使用，例如<strong>div、span、section、article、nav</strong>等，它们用于将页面内容划分为更加具有语义的区域，并进行样式和布局设置。</p>
-</blockquote>
-<blockquote>
-<p>最后，多媒体元素和表单元素是构建丰富交互体验的关键。例如，使用视频标签（<strong>video</strong>）和音频标签（<strong>audio</strong>）嵌入视频和音频内容，使用表单标签（<strong>form</strong>）、输入框标签（<strong>input</strong>）、下拉框标签（<strong>select</strong>）等实现数据的输入、提交和验证。</p>
-</blockquote>
+<p>这些CSS属性的值将决定元素在页面上的实际位置和大小。</p>
+<p>CSS视觉格式化模型非常重要，因为它可以帮助我们设计和实现具有吸引力的页面布局。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载来源https://github.com/yelog ，在这只为做笔记供个人使用。 </span>

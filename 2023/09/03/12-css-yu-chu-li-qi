@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2-html组成 | Hexo</title>
-  <meta name="keywords" content=" HTML ">
-  <meta name="description" content="2-html组成 | Hexo">
+  <title>12-css预处理器 | Hexo</title>
+  <meta name="keywords" content=" CSS ">
+  <meta name="description" content="12-css预处理器 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -496,9 +496,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-2-html组成" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-12-css预处理器" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">2-html组成</h1>
+        <h1 class="article-title">12-css预处理器</h1>
     
     <div class="article-meta">
         
@@ -508,7 +508,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Html">Html</a>
+            <a  data-rel="CSS">CSS</a>
             
         </span>
         
@@ -516,14 +516,14 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color5">HTML</a>
+            <a class="color4">CSS</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-09-03 16:44:58'>2023-09-03 16:13</time>
+            发布时间 : <time class="date" title='最后更新: 2023-09-03 22:16:09'>2023-09-03 22:05</time>
         
     </div>
     <div class="article-meta">
@@ -545,7 +545,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML%E7%BB%84%E6%88%90"><span class="toc-text">HTML组成</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS-%E9%A2%84%E5%A4%84%E7%90%86%E5%99%A8"><span class="toc-text">CSS 预处理器</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Sass%E5%AE%98%E7%BD%91"><span class="toc-text">Sass官网</span></a></li></ol></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -561,61 +561,10 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="HTML组成"><a href="#HTML组成" class="headerlink" title="HTML组成"></a>HTML组成</h1><p>HTML是超文本标记语言（<em><strong>HyperText Markup Language</strong></em>）的缩写，它是用于构建网页的基本语言之一。HTML由一系列标签（<strong>tag</strong>）组成，标签用于描述网页的结构和内容。</p>
-<p>以下是HTML的基本组成部分：</p>
-<blockquote>
-<p>DOCTYPE声明：这是HTML文档的第一行，用于指定文档类型。例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword"><code class="language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>></span></code></pre>
-
-<blockquote>
-<p>HTML标签：HTML文档中的所有内容都需要包含在HTML标签中。HTML标签由开始标签和结束标签组成，例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">html</span>></span>
-  <span class="comment"><!-- 此处为页面内容 --></span>
-<span class="tag"></<span class="name">html</span>></span></code></pre>
-
-<blockquote>
-<p>Head标签：Head标签用于定义文档的元数据，例如页面标题、编码方式等。Head标签位于HTML标签内，例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">head</span>></span>
-  <span class="tag"><<span class="name">title</span>></span>我的网页<span class="tag"></<span class="name">title</span>></span>
-  <span class="tag"><<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>></span>
-<span class="tag"></<span class="name">head</span>></span></code></pre>
-
-<blockquote>
-<p>Body标签：Body标签用于定义页面的主体内容，例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">body</span>></span>
-  <span class="tag"><<span class="name">h1</span>></span>欢迎来到我的网页<span class="tag"></<span class="name">h1</span>></span>
-  <span class="tag"><<span class="name">p</span>></span>这是我的第一个网页。<span class="tag"></<span class="name">p</span>></span>
-<span class="tag"></<span class="name">body</span>></span></code></pre>
-
-<blockquote>
-<p>下面是一个完整的HTML示例代码：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword"><code class="language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>></span>
-<span class="tag"><<span class="name">html</span>></span>
-  <span class="tag"><<span class="name">head</span>></span>
-    <span class="tag"><<span class="name">title</span>></span>我的网页<span class="tag"></<span class="name">title</span>></span>
-    <span class="tag"><<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>></span>
-  <span class="tag"></<span class="name">head</span>></span>
-  <span class="tag"><<span class="name">body</span>></span>
-    <span class="tag"><<span class="name">h1</span>></span>欢迎来到我的网页<span class="tag"></<span class="name">h1</span>></span>
-    <span class="tag"><<span class="name">p</span>></span>这是我的第一个网页。<span class="tag"></<span class="name">p</span>></span>
-    <span class="tag"><<span class="name">img</span> <span class="attr">src</span>=<span class="string">"myimage.png"</span> <span class="attr">alt</span>=<span class="string">"我的图片"</span>></span>
-  <span class="tag"></<span class="name">body</span>></span>
-<span class="tag"></<span class="name">html</span>></span></code></pre>
-
-<blockquote>
-<p>在实际开发中，需要注意HTML的语义化，即使用恰当的标签描述内容的结构和意义，以便浏览器、搜索引擎和其他设备更好地理解和解析页面内容。例如，使用标题标签（<strong>h1~h6</strong>）描述页面标题，使用段落标签（<strong>p</strong>）描述段落内容，使用列表标签（<strong>ul、ol、li</strong>）描述列表等。</p>
-</blockquote>
-<blockquote>
-<p>同时，还需要注意布局元素的使用，例如<strong>div、span、section、article、nav</strong>等，它们用于将页面内容划分为更加具有语义的区域，并进行样式和布局设置。</p>
-</blockquote>
-<blockquote>
-<p>最后，多媒体元素和表单元素是构建丰富交互体验的关键。例如，使用视频标签（<strong>video</strong>）和音频标签（<strong>audio</strong>）嵌入视频和音频内容，使用表单标签（<strong>form</strong>）、输入框标签（<strong>input</strong>）、下拉框标签（<strong>select</strong>）等实现数据的输入、提交和验证。</p>
-</blockquote>
+        <h2 id="CSS-预处理器"><a href="#CSS-预处理器" class="headerlink" title="CSS 预处理器"></a>CSS 预处理器</h2><p>首先，为什么要学习CSS预处理器呢？CSS预处理器是一种将CSS代码转化为浏览器可识别的CSS语言的工具，它可以简化CSS的编写过程，提高CSS代码的可读性和可维护性。CSS预处理器可以让开发者使用变量、嵌套、Mixin（混合）和函数等高级CSS特性，以及更方便地处理CSS文件。</p>
+<p>常见的CSS预处理器有Sass、Less和Stylus等。其中，Sass是最为流行的一种预处理器，它具有简洁、灵活、易于使用的特点，并且具有庞大的社区支持。因此，我们可以选择学习Sass作为我们的第一步。</p>
+<p>在学习Sass之前，我们需要安装Sass的编译器。Sass有两种编译方式：一种是通过命令行编译，另一种是通过图形界面编译器。这里我们介绍一下通过命令行编译的方式。</p>
+<h3 id="Sass官网"><a href="#Sass官网" class="headerlink" title="Sass官网"></a>Sass官网</h3><p>Sass 官网 <a target="_blank" rel="noopener" href="https://www.sass.hk/docs/">Sass中文网</a>。</p>
 
       
        <hr><span style="font-style: italic;color: gray;"> 转载来源https://github.com/yelog ，在这只为做笔记供个人使用。 </span>

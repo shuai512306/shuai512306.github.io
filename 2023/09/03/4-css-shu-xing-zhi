@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>2-html组成 | Hexo</title>
-  <meta name="keywords" content=" HTML ">
-  <meta name="description" content="2-html组成 | Hexo">
+  <title>4-css属性值 | Hexo</title>
+  <meta name="keywords" content=" CSS ">
+  <meta name="description" content="4-css属性值 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -496,9 +496,9 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-2-html组成" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-4-css属性值" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">2-html组成</h1>
+        <h1 class="article-title">4-css属性值</h1>
     
     <div class="article-meta">
         
@@ -508,7 +508,7 @@
             <i class="iconfont icon-category"></i>
             
             
-            <a  data-rel="Html">Html</a>
+            <a  data-rel="CSS">CSS</a>
             
         </span>
         
@@ -516,14 +516,14 @@
         <span class="tag">
             <i class="iconfont icon-tag"></i>
             
-            <a class="color5">HTML</a>
+            <a class="color4">CSS</a>
             
         </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2023-09-03 16:44:58'>2023-09-03 16:13</time>
+            发布时间 : <time class="date" title='最后更新: 2023-09-03 21:27:07'>2023-09-03 21:22</time>
         
     </div>
     <div class="article-meta">
@@ -545,7 +545,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML%E7%BB%84%E6%88%90"><span class="toc-text">HTML组成</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#CSS%E5%B1%9E%E6%80%A7%E5%80%BC"><span class="toc-text">CSS属性值</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -561,60 +561,49 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="HTML组成"><a href="#HTML组成" class="headerlink" title="HTML组成"></a>HTML组成</h1><p>HTML是超文本标记语言（<em><strong>HyperText Markup Language</strong></em>）的缩写，它是用于构建网页的基本语言之一。HTML由一系列标签（<strong>tag</strong>）组成，标签用于描述网页的结构和内容。</p>
-<p>以下是HTML的基本组成部分：</p>
+        <h2 id="CSS属性值"><a href="#CSS属性值" class="headerlink" title="CSS属性值"></a>CSS属性值</h2><p>使用CSS样式表定义属性值时，属性值的计算机制是很重要的。CSS属性值的计算机制可以分为两类：继承性和层叠性。</p>
+<p>1、继承性</p>
 <blockquote>
-<p>DOCTYPE声明：这是HTML文档的第一行，用于指定文档类型。例如：</p>
+<p>CSS中有些属性的值是可以被继承的，这意味着父元素的某些属性值会被子元素继承。例如，当在body元素中定义了一个字体大小时，所有子元素的字体大小将自动继承该值，除非子元素自己定义了一个新的值来覆盖继承的值。这些属性值被称为“可继承属性”。</p>
 </blockquote>
-<pre class=" language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword"><code class="language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>></span></code></pre>
+<p>2、层叠性</p>
+<blockquote>
+<p>层叠性是指当多个样式规则应用于同一个元素时，这些规则将如何相互影响。CSS的层叠性机制通过“优先级”来解决这个问题，优先级是根据样式规则的选择器和关键字来计算的。如果两个规则具有相同的优先级，则后面的规则将覆盖前面的规则。</p>
+</blockquote>
+<p>需要注意的是，CSS样式表中的规则并不一定按照书写顺序来应用，而是根据规则的特定优先级来应用。</p>
+<p>以下是一个CSS属性值计算机制的示例：</p>
+<pre class=" language-highlight CSS"><code class="language-highlight CSS">
+<span class="selector-class">.container</span> {
+  <span class="attribute">width</span>: <span class="number">80%</span>;
+  <span class="attribute">margin</span>: <span class="number">0</span> auto;
+}
+
+<span class="selector-class">.box</span> {
+  <span class="attribute">width</span>: <span class="number">50%</span>;
+  <span class="attribute">padding</span>: <span class="number">20px</span>;
+  <span class="attribute">border</span>: <span class="number">1px</span> solid black;
+} 
+
+<<span class="selector-tag">div</span> class="container">
+  <<span class="selector-tag">div</span> class="box">Box <span class="number">1</span></<span class="selector-tag">div</span>>
+  <<span class="selector-tag">div</span> class="box">Box <span class="number">2</span></<span class="selector-tag">div</span>>
+</<span class="selector-tag">div</span>> 
+</code></pre>
 
 <blockquote>
-<p>HTML标签：HTML文档中的所有内容都需要包含在HTML标签中。HTML标签由开始标签和结束标签组成，例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">html</span>></span>
-  <span class="comment"><!-- 此处为页面内容 --></span>
-<span class="tag"></<span class="name">html</span>></span></code></pre>
-
-<blockquote>
-<p>Head标签：Head标签用于定义文档的元数据，例如页面标题、编码方式等。Head标签位于HTML标签内，例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">head</span>></span>
-  <span class="tag"><<span class="name">title</span>></span>我的网页<span class="tag"></<span class="name">title</span>></span>
-  <span class="tag"><<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>></span>
-<span class="tag"></<span class="name">head</span>></span></code></pre>
-
-<blockquote>
-<p>Body标签：Body标签用于定义页面的主体内容，例如：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">body</span>></span>
-  <span class="tag"><<span class="name">h1</span>></span>欢迎来到我的网页<span class="tag"></<span class="name">h1</span>></span>
-  <span class="tag"><<span class="name">p</span>></span>这是我的第一个网页。<span class="tag"></<span class="name">p</span>></span>
-<span class="tag"></<span class="name">body</span>></span></code></pre>
-
-<blockquote>
-<p>下面是一个完整的HTML示例代码：</p>
-</blockquote>
-<pre class=" language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword"><code class="language-highlight HTML"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span>></span>
-<span class="tag"><<span class="name">html</span>></span>
-  <span class="tag"><<span class="name">head</span>></span>
-    <span class="tag"><<span class="name">title</span>></span>我的网页<span class="tag"></<span class="name">title</span>></span>
-    <span class="tag"><<span class="name">meta</span> <span class="attr">charset</span>=<span class="string">"UTF-8"</span>></span>
-  <span class="tag"></<span class="name">head</span>></span>
-  <span class="tag"><<span class="name">body</span>></span>
-    <span class="tag"><<span class="name">h1</span>></span>欢迎来到我的网页<span class="tag"></<span class="name">h1</span>></span>
-    <span class="tag"><<span class="name">p</span>></span>这是我的第一个网页。<span class="tag"></<span class="name">p</span>></span>
-    <span class="tag"><<span class="name">img</span> <span class="attr">src</span>=<span class="string">"myimage.png"</span> <span class="attr">alt</span>=<span class="string">"我的图片"</span>></span>
-  <span class="tag"></<span class="name">body</span>></span>
-<span class="tag"></<span class="name">html</span>></span></code></pre>
-
-<blockquote>
-<p>在实际开发中，需要注意HTML的语义化，即使用恰当的标签描述内容的结构和意义，以便浏览器、搜索引擎和其他设备更好地理解和解析页面内容。例如，使用标题标签（<strong>h1~h6</strong>）描述页面标题，使用段落标签（<strong>p</strong>）描述段落内容，使用列表标签（<strong>ul、ol、li</strong>）描述列表等。</p>
+<p>首先，我们计算.container的宽度。由于width属性值为80%，而容器的父级元素（假设是body）的宽度为100%，因此.container的宽度为80%乘以父级元素的宽度。如果父级元素的宽度为1200px，那么.container的宽度就是960px。</p>
 </blockquote>
 <blockquote>
-<p>同时，还需要注意布局元素的使用，例如<strong>div、span、section、article、nav</strong>等，它们用于将页面内容划分为更加具有语义的区域，并进行样式和布局设置。</p>
+<p>然后，我们计算.box的宽度。由于width属性值为50%，而.box的父级元素是.container，其宽度已经确定为960px，因此.box的宽度为50%乘以父级元素的宽度，也就是480px。</p>
 </blockquote>
 <blockquote>
-<p>最后，多媒体元素和表单元素是构建丰富交互体验的关键。例如，使用视频标签（<strong>video</strong>）和音频标签（<strong>audio</strong>）嵌入视频和音频内容，使用表单标签（<strong>form</strong>）、输入框标签（<strong>input</strong>）、下拉框标签（<strong>select</strong>）等实现数据的输入、提交和验证。</p>
+<p>接下来，我们计算.box的内边距和边框宽度。.box的内边距为20px，边框宽度为1px。因此，每个盒子的宽度将变为480px + 20px * 2 + 1px * 2，即522px。</p>
+</blockquote>
+<blockquote>
+<p>最后，我们将两个.box元素的宽度相加，再加上它们之间的空白间距。假设空白间距为20px，则两个盒子的总宽度为1044px。由于容器的宽度为960px，因此两个盒子将不会水平排列，而是会自动换行。</p>
+</blockquote>
+<blockquote>
+<p>这就是CSS属性值计算机制的基本原理。通过计算每个元素的具体尺寸和位置，浏览器可以在页面中正确地排列元素。</p>
 </blockquote>
 
       
