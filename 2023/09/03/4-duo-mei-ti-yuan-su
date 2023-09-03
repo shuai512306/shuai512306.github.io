@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Hexo</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="Hexo">
+  <title>4-多媒体元素 | Hexo</title>
+  <meta name="keywords" content=" HTML ">
+  <meta name="description" content="4-多媒体元素 | Hexo">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta property="og:type" content="website">
 <meta property="og:title" content="about">
@@ -56,7 +56,7 @@
 
 
 <body>
-<aside class="nav mobile">
+<aside class="nav">
     <div class="nav-left">
         <a href="/"
    class="avatar_target">
@@ -457,12 +457,58 @@
         </div>
     </div>
 </aside>
-<div id="post" class="index">
+<div id="post">
     <div class="pjax">
-        <article class="index">
-            <div class="toc-ref">
+        <article id="post-4-多媒体元素" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8E%E5%8F%B6%E8%90%BD%E9%98%81"><span class="toc-text">关于叶落阁</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <h1 class="article-title">4-多媒体元素</h1>
+    
+    <div class="article-meta">
+        
+        
+        
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="Html">Html</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color5">HTML</a>
+            
+        </span>
+        
+    </div>
+    <div class="article-meta">
+        
+            发布时间 : <time class="date" title='最后更新: 2023-09-03 16:45:08'>2023-09-03 16:15</time>
+        
+    </div>
+    <div class="article-meta">
+        
+        
+        <span id="busuanzi_container_page_pv">
+            阅读 :<span id="busuanzi_value_page_pv">
+                <span class="count-comment">
+                    <span class="spinner">
+                      <div class="cube1"></div>
+                      <div class="cube2"></div>
+                    </span>
+                </span>
+            </span>
+        </span>
+        
+        
+    </div>
+    
+    <div class="toc-ref">
+    
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#HTML-%E5%A4%9A%E5%AA%92%E4%BD%93%E5%85%83%E7%B4%A0"><span class="toc-text">HTML 多媒体元素</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -475,37 +521,73 @@
     }
 </style>
 </div>
-            <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于叶落阁"><a href="#关于叶落阁" class="headerlink" title="关于叶落阁"></a>关于叶落阁</h2><p><strong>叶落阁</strong> 是阁主（杨玉杰）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 生成，部署在 <a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>主题 <a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p><code>3-hexo</code> 主题使用交流可以加 Q群: <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e8cf083cc097141eaf323396f1766809b8e90ff00c67bb441898f672892f6904"><img data-ignore border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="3-hexo使用交流" title="3-hexo使用交流"></a></p>
-<p>主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad&#x2F;手机等移动端适配</li>
-<li>页面全局快捷键 <a target="_blank" rel="noopener" href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
-</ul>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="HTML-多媒体元素"><a href="#HTML-多媒体元素" class="headerlink" title="HTML 多媒体元素"></a>HTML 多媒体元素</h1><p>下面是一些常用的 HTML 多媒体标签：</p>
+<p>1、**&lt;img&gt;** 标签：用于嵌入图片。</p>
+<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"image.jpg"</span> <span class="attr">alt</span>=<span class="string"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">img</span> <span class="attr">src</span>=<span class="string">"image.jpg"</span> <span class="attr">alt</span>=<span class="string">"图片"</span>></span></code></pre>
 
-        </article>
-        
-        <p>
-            <a  class="dashang" onclick="dashangToggle()">赏</a>
-        </p>
-        
-        
+<p>2、**&lt;video&gt;** 标签：用于嵌入视频。</p>
+<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">video</span> <span class="attr">width</span>=<span class="string">"320"</span> <span class="attr">height</span>=<span class="string">"240"</span> <span class="attr">controls</span>></span>
+  <span class="tag"><<span class="name">source</span> <span class="attr">src</span>=<span class="string">"video.mp4"</span> <span class="attr">type</span>=<span class="string">"video/mp4"</span>></span>
+  <span class="tag"><<span class="name">source</span> <span class="attr">src</span>=<span class="string">"video.ogg"</span> <span class="attr">type</span>=<span class="string">"video/ogg"</span>></span>
+  Your browser does not support the video tag.
+<span class="tag"></<span class="name">video</span>></span></code></pre>
+
+<p>3、**&lt;audio&gt;** 标签：用于嵌入音频。</p>
+<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name">audio</span> <span class="attr"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">audio</span> <span class="attr">controls</span>></span>
+  <span class="tag"><<span class="name">source</span> <span class="attr">src</span>=<span class="string">"music.mp3"</span> <span class="attr">type</span>=<span class="string">"audio/mpeg"</span>></span>
+  <span class="tag"><<span class="name">source</span> <span class="attr">src</span>=<span class="string">"music.ogg"</span> <span class="attr">type</span>=<span class="string">"audio/ogg"</span>></span>
+  Your browser does not support the audio element.
+<span class="tag"></<span class="name">audio</span>></span></code></pre>
+
+<p>在使用多媒体标签时，我们需要注意以下几点：</p>
+<ul>
+<li>在使用 <strong>&lt;img&gt;</strong> 标签时，应该始终为 <em>alt</em> 属性设置一个有意义的值，以便于屏幕阅读器和搜索引擎等无法直接显示图片的工具理解图片内容。</li>
+<li>在使用 <strong>&lt;video&gt;</strong> 和 <strong>&lt;audio&gt;</strong> 标签时，应该为标签设置 <em>controls</em> 属性，以便于用户能够控制媒体的播放和暂停等。</li>
+<li>在使用 <strong>&lt;video&gt;</strong> 和 <strong>&lt;audio&gt;</strong> 标签时，应该提供多种格式的媒体文件，以便于不同浏览器和设备能够兼容播放。</li>
+<li>在使用多媒体标签时，应该优化文件大小和加载速度，以提高网页的性能和用户体验。</li>
+</ul>
+<p>下面是一个使用多媒体标签的示例：</p>
+<pre class=" language-highlight HTML"><span class="tag">&lt;<span class="name"><code class="language-highlight HTML"><span class="tag">&lt;<span class="name">html</span>></span>
+  <span class="tag"><<span class="name">head</span>></span>
+    <span class="tag"><<span class="name">title</span>></span>视频播放示例<span class="tag"></<span class="name">title</span>></span>
+  <span class="tag"></<span class="name">head</span>></span>
+  <span class="tag"><<span class="name">body</span>></span>
+    <span class="tag"><<span class="name">h1</span>></span>视频播放示例<span class="tag"></<span class="name">h1</span>></span>
+    <span class="tag"><<span class="name">video</span> <span class="attr">src</span>=<span class="string">"video.mp4"</span> <span class="attr">controls</span> <span class="attr">width</span>=<span class="string">"640"</span> <span class="attr">height</span>=<span class="string">"360"</span>></span>
+      您的浏览器不支持 video 标签。
+    <span class="tag"></<span class="name">video</span>></span>
+    <span class="tag"><<span class="name">h2</span>></span>音频播放示例<span class="tag"></<span class="name">h2</span>></span>
+    <span class="tag"><<span class="name">audio</span> <span class="attr">src</span>=<span class="string">"audio.mp3"</span> <span class="attr">controls</span>></span>
+      您的浏览器不支持 audio 标签。
+    <span class="tag"></<span class="name">audio</span>></span>
+  <span class="tag"></<span class="name">body</span>></span>
+<span class="tag"></<span class="name">html</span>></span></code></pre>
+
+<p>在实际开发中，媒体元素的应用非常广泛，例如在网站中加入介绍视频、音频背景等等，都可以使用媒体元素来实现。同时，<strong>需要注意优化媒体文件大小，以提高页面加载速度。</strong></p>
+
+      
+       <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 jaytp@qq.com </span>
+    </div>
+</article>
+
+
+<p>
+    <a  class="dashang" onclick="dashangToggle()">赏</a>
+</p>
+
+
+
+
+
+
+    
+
+
+
+
     </div>
     <div class="copyright">
         <p class="footer-entry">
@@ -514,11 +596,11 @@
 <p class="footer-entry">Built with <a href="https://hexo.io/" target="_blank">Hexo</a> and <a href="https://github.com/yelog/hexo-theme-3-hexo" target="_blank">3-hexo</a> theme</p>
 
     </div>
-</div>
-<div class="full-toc">
-    <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
+    <div class="full-toc">
+        <button class="full" data-title="切换全屏 快捷键 s"><span class="min "></span></button>
 <a class="" id="rocket" ></a>
 
+    </div>
 </div>
 
 <div class="hide_box" onclick="dashangToggle()"></div>
